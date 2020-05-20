@@ -1,0 +1,131 @@
+@import './responsive';
+body {
+  margin: 0;
+  font-family: 'Inconsolata', monospace;
+}
+
+@mixin flexBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#my-status {
+  @include flexBox();
+  margin: 0 0 25px 0;
+  font-size: larger;
+  border: 1px dashed black;
+  padding: 10px 5px;
+}
+
+.location-buttons-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#user-list {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.location-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+  &:hover {
+    color: white;
+    padding-left: 15px;
+    background: black;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .material-icons {
+    font-size: 15px;
+  }
+}
+
+.clean-list {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 20px 0;
+}
+
+.user-item {
+  color: white;
+  opacity: 0.7;
+  padding: 5px 15px;
+  margin-bottom: 5px;
+  &:hover {
+    transform: scale(0.95);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+}
+
+.coords-tab {
+  padding: 5px 0px;
+  font-size: smaller;
+}
+
+#current-location {
+  padding: 25px 0;
+}
+
+#previous-location {
+  color: gray;
+  display: flex;
+  padding: 10px 0;
+  flex-direction: column;
+  .material-icons {
+    font-size: 15px;
+  }
+}
+
+.material-icons {
+  margin: 0 5px;
+}
+
+.app {
+  display: flex;
+  width: 100vw;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  padding: 50px;
+}
+
+.right {
+  width: 65vw;
+  padding: 50px;
+}
+
+.serif {
+  font-family: 'Merriweather', serif;
+  font-size: small;
+  letter-spacing: 0.75px;
+}
+
+.create-room-b{
+  font-family: 'Inconsolata', monospace;
+  margin-top: 15px;
+  display: flex;
+  font-size: medium;  
+  border: black 1px solid;
+  background-color:white;
+  font-size: 16px;
+  height: 40px;
+}
+
+.create-room-b:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.create-room-b:focus {outline:0;}
+
