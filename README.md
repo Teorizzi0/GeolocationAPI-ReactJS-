@@ -1,4 +1,4 @@
-#Geolocation API & ReactJS
+# Geolocation API & ReactJS
 
 Geolocation API & ReactJS is a project which has been done for the WWW Applications course at AAlto University (FI).
 
